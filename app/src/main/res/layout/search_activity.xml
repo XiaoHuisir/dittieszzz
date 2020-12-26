@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_g"
+    android:orientation="vertical"
+    tools:context=".ui.SearchActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative_search"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"
+        android:background="#D26554">
+
+        <ImageView
+            android:id="@+id/im_break"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:src="@mipmap/brek" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/im_break">
+
+            <ImageView
+                android:id="@+id/image_search_result"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/searchimg" />
+
+            <EditText
+                android:id="@+id/ed_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toLeftOf="@id/image_search_result"
+                android:background="@drawable/txt_bg"
+                android:drawableLeft="@mipmap/icon_search"
+                android:gravity="center_vertical"
+                android:hint="搜索"
+                android:paddingLeft="20dp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/newnew_bg" />
+
+    <ListView
+        android:id="@+id/list_sh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
