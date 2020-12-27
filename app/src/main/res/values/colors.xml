@@ -52,5 +52,6 @@
     <color name="circle">#aa738ffe</color>
     <color name="rect">#aae84e40</color>
     <color name="searchbg">#BC5B4B</color>
-
+    <color name="fragment_bg">#F0F0F0</color>
+    <color name="agreement">#0B71E2</color>
 </resources>
