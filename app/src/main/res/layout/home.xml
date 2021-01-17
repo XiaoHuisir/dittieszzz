@@ -34,6 +34,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/txt_bg"
                 android:drawableLeft="@mipmap/icon_search"
@@ -46,5 +47,27 @@
         </android.support.constraint.ConstraintLayout>
 
     </RelativeLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_marginTop="8dp"
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/svs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
 </LinearLayout>

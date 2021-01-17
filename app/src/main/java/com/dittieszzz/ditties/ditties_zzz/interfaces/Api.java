@@ -1,6 +1,9 @@
 package com.dittieszzz.ditties.ditties_zzz.interfaces;
 
 
+import com.dittieszzz.ditties.ditties_zzz.bean.HomeBean;
+import com.dittieszzz.ditties.ditties_zzz.bean.HomeDetailsBean;
+
 import java.util.Map;
 
 import io.reactivex.Flowable;
@@ -14,6 +17,13 @@ public interface Api {
 
 
     //---------------------------------------
+    //home
+    @POST("toMainIndex")
+    @FormUrlEncoded
+    Flowable<HomeBean> homeApi(@Field("pageNum") int pagenum);
+    @POST("detailPoems")
+    @FormUrlEncoded
+    Flowable<HomeDetailsBean> homedetailsApi(@Field("id") String id);
 ////login
 //    @POST("user_login")
 //    @FormUrlEncoded

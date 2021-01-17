@@ -11,16 +11,12 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 import android.widget.Toast;
-
-import com.dittieszzz.ditties.ditties_zzz.MainActivity;
 import com.dittieszzz.ditties.ditties_zzz.R;
 import com.dittieszzz.ditties.ditties_zzz.adpter.MyAdapter;
 import com.dittieszzz.ditties.ditties_zzz.base.BaseActivity;
 import com.dittieszzz.ditties.ditties_zzz.interfaces.IBasePresenter;
 import com.dittieszzz.ditties.ditties_zzz.manager.FilterListener;
-import com.dittieszzz.ditties.ditties_zzz.ui.fragment.HomeFragment;
 
 import java.util.ArrayList;
 import java.util.List;

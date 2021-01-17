@@ -1,5 +1,8 @@
 apply plugin: 'com.android.application'
-
+apply plugin: 'org.greenrobot.greendao'
+def getVersionName(){
+    "1.0"
+}
 android {
     compileSdkVersion 28
     buildToolsVersion "29.0.1"
@@ -7,8 +10,8 @@ android {
         applicationId "com.dittieszzz.ditties.ditties_zzz"
         minSdkVersion 18
         targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        versionCode 2021117
+        getVersionName()
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         ndk {
             //选择要添加的对应cpu类型的.so库。
@@ -20,6 +23,7 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+
     }
 }
 
@@ -97,4 +101,5 @@ dependencies {
     implementation 'me.samlss:bloom:1.0.0'
 
     implementation 'me.jessyan:autosize:1.2.1'
+    implementation 'org.greenrobot:greendao:3.2.2'//greendao
 }
